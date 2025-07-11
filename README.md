@@ -42,33 +42,7 @@ The following regression models can be used:
 
 ---
 
-## 🧱 Project Structure
 
-employee_salary_prediction/
-│
-├── data/
-│ └── employeedata.csv # Main dataset
-│
-├── model/
-│ ├── salary_model.pkl # Trained ML model
-│ ├── le_education.pkl # Label encoder for education
-│ ├── le_role.pkl # Label encoder for role
-│ └── le_location.pkl # Label encoder for location
-│
-├── static/
-│ └── style.css # CSS styling
-│
-├── templates/
-│ └── index.html # Web form UI
-│
-├── notebooks/
-│ ├── salary_prediction.ipynb # Model training notebook
-│ └── adddata.ipynb # Add new data to CSV
-│
-├── app.py # Flask web application
-├── train_model.py # Script to train and save model
-├── requirements.txt # Python dependencies
-└── README.md
 
 
 
