@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Employee Salary Prediction</h2>
+        <form action="/predict" method="post">
+            <label>Experience (years):</label>
+            <input type="number" name="experience" step="0.1" required>
+
+            <label>Age:</label>
+            <input type="number" name="age" required>
+
+            <label>Education:</label>
+            <select name="education">
+                <option value="bachelor">Bachelor</option>
+                <option value="master">Master</option>
+                <option value="phd">PhD</option>
+            </select>
+
+            <label>Role:</label>
+            <select name="role">
+                <option value="junior developer">Junior Developer</option>
+                <option value="data analyst">Data Analyst</option>
+                <option value="senior developer">Senior Developer</option>
+                <option value="backend developer">Backend Developer</option>
+                <option value="frontend developer">Frontend Developer</option>
+                <option value="data scientist">Data Scientist</option>
+                <option value="tech lead">Tech Lead</option>
+            </select>
+
+            <label>Location:</label>
+            <select name="location">
+                <option value="tier-1">Tier 1</option>
+                <option value="tier-2">Tier 2</option>
+            </select>
+
+            <input type="submit" value="Predict Salary">
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            <h3>Predicted Salary: ₹{{ prediction }}</h3>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
