@@ -1,0 +1,11 @@
+experience,education,role,location,age,salary
+1,bachelor,junior developer,tier-2,22,30000
+3,master,data analyst,tier-1,26,50000
+5,phd,senior developer,tier-1,30,80000
+2,bachelor,data analyst,tier-2,24,35000
+4,master,backend developer,tier-1,28,60000
+6,phd,data scientist,tier-1,32,90000
+3,bachelor,frontend developer,tier-2,27,45000
+5,master,senior developer,tier-1,31,75000
+7,phd,tech lead,tier-1,35,100000
+4,master,data scientist,tier-1,29,78000
